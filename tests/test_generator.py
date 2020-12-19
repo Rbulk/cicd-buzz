@@ -13,9 +13,10 @@ def test_sample_multiple_words():
     assert len(words) == 2
     assert words[0] in K
     assert words[1] in K
-    assert words[0] is not words[K]
+    assert words[0] is not words[1]
 
 
 def test_generate_buzz_of_at_least_five_words():
     phrase = generator.generate_buzz()
     assert len(phrase.split()) >= 5
+
