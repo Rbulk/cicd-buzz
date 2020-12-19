@@ -40,7 +40,7 @@ verbs = (
 
 def sample(x, n=1):
     result = random.sample(x, n)
-    if n==1:
+    if n == 1:
         return result[0]
     return result
 
@@ -53,4 +53,3 @@ def generate_buzz():
 
 if __name__ == "__main__":
     print(generate_buzz())
-
